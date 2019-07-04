@@ -201,6 +201,7 @@ internal abstract class AspectJTransform(val project: Project, private val polic
         } else {
             logEnvInvalid()
             logNoAugmentation()
+            copyUnprocessedFiles(inputs, outputDir)
         }
     }
 
